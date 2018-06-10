@@ -1,0 +1,1 @@
+![Styling an app](ScreenShot.png)
