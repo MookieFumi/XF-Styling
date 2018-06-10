@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Application xmlns="http://xamarin.com/schemas/2014/forms" xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" x:Class="MookieFumiFormsControls.App">
+    <Application.Resources>
+        <ResourceDictionary>
+            <Style TargetType="ContentPage" ApplyToDerivedTypes="True">
+                <Setter Property="BackgroundColor" Value="#b3e6cc" />
+            </Style>
+            <Style TargetType="Entry" >
+                <Setter Property="FontFamily">
+                    <Setter.Value>
+                        <OnPlatform x:TypeArguments="x:String"
+                            Android="Lato-Regular.ttf#Lato-Regular"
+                            iOS="Lato-Regular" />
+                    </Setter.Value>
+                </Setter>
+            </Style>
+            <Style TargetType="Label" >
+                <Setter Property="FontFamily">
+                    <Setter.Value>
+                        <OnPlatform x:TypeArguments="x:String"
+                            Android="Lato-Regular.ttf#Lato-Regular"
+                            iOS="Lato-Regular" />
+                    </Setter.Value>
+                </Setter>
+            </Style>
+            <Style x:Key="BaseButton" TargetType="Button" >
+                <Setter Property="BorderRadius" Value="20" />
+                <Setter Property="TextColor" Value="#ffffff" />
+                <Setter Property="FontFamily">
+                    <Setter.Value>
+                        <OnPlatform x:TypeArguments="x:String"
+                            Android="Lato-Regular.ttf#Lato-Regular"
+                            iOS="Lato-Regular" />
+                    </Setter.Value>
+                </Setter>
+            </Style>
+            <Style x:Key="PrimaryButton" TargetType="Button" BasedOn="{StaticResource BaseButton}">
+                <Setter Property="BackgroundColor" Value="#4caf50" />
+            </Style>
+            <Style x:Key="SecondaryButton" TargetType="Button" BasedOn="{StaticResource BaseButton}">
+                <Setter Property="BackgroundColor" Value="#9ccc65" />
+            </Style>
+            <Style x:Key="DangerButton" TargetType="Button" BasedOn="{StaticResource BaseButton}">
+                <Setter Property="BackgroundColor" Value="#fa8072" />
+            </Style>
+        </ResourceDictionary>
+    </Application.Resources>
+</Application>

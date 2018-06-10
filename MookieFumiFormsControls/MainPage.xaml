@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms" 
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" 
+             xmlns:local="clr-namespace:MookieFumiFormsControls" 
+             xmlns:controls="clr-namespace:MookieFumiFormsControls.Controls;assembly=MookieFumiFormsControls"
+             x:Class="MookieFumiFormsControls.MainPage"
+             Padding="20">
+    <StackLayout Padding="10">
+        <Label TextColor="#934293" 
+               Text="MyApp" 
+               FontSize="80" 
+               HorizontalOptions="CenterAndExpand"/>
+        <controls:WeCodeEntry Placeholder="Put your text here" Text="MookieFumi"/>
+        <controls:WeCodeButton
+            Style="{StaticResource PrimaryButton}"
+            Text="I'm a primary button"/>
+        <controls:WeCodeButton
+            Style="{StaticResource SecondaryButton}"
+            Text="I'm a secondary button"/>
+        <controls:WeCodeButton
+            Style="{StaticResource DangerButton}"
+            Text="I'm a danger button"/>
+    </StackLayout>
+</ContentPage>
